@@ -319,12 +319,12 @@
     font-style: italic;
   }
 
-  /* Project 1 */
+  /* Project */
   .projects-wrapper {
     position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 40vh;
+    min-height: 75vh;
     background-color:#ede0d4;
     display: flex;
     align-items: center;
@@ -364,10 +364,11 @@
     flex-direction: column;
     align-items: center; 
     text-align: center;
+    margin-top: -4rem;
   }
 
   .project-1-title, .project-2-title, .project-3-title {
-    padding-top: 2rem;
+    margin-top: -0.5rem;
     font-size: 1.3rem;
     color: #432818;
     text-align: center;
@@ -377,15 +378,15 @@
     font-size: 1rem;
     color: #432818;
     text-align: center;
+    margin-bottom: -5.5rem;
   }
 
   .project-1-body, .project-2-body, .project-3-body {
-    padding-top: 1rem;
+    margin-top: -5rem;
   }
 
   /* Project 1 Image */
   .project-1-img img {
-    padding-top: 1rem;
     width: 500px;
     height: auto;
     border-radius: 5px;
@@ -394,7 +395,6 @@
 
   /* Project 2 Image */
   .project-2-img img {
-    padding-top: 1rem;
     width: 500px;
     height: auto;
     border-radius: 5px;
@@ -403,67 +403,53 @@
 
   /* Project 3 Image */
   .project-3-img img {
-    padding-top: 1rem;
     width: 500px;
     height: auto;
     border-radius: 5px;
     display: block;
   }
 
-  .see-me-btn {
-    display: flex;
-    margin-top: 5rem;
-    padding: 6px 12px;
-    width: fit-content;
-    background-color: #a3b18a;
-    color: #432818;
-    text-decoration: none;
-    font-size: 15px;
-    border-radius: 8px;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    
-    transition: background-color 0.3s ease;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  .hover-zoom {
+    transition: transform 0.3s ease;
   }
 
-  .see-me-btn:hover {
-    background-color:#c2c5aa;
+  .hover-zoom:hover {
     transform: scale(1.05);
+    cursor: pointer;
   }
 
   .slider-btn {
     position: absolute;
-    top: 50%;
     transform: translateY(-50%);
-    width: 3rem; 
-    height: 2.9rem;
-    font-size: 1.5rem;
-    background-color: #a98467;
-    color: white;
+    font-size: 8rem;
+    line-height: 6;
+    color: #432818;
     border: none;
-    border-radius: 50%;
+    background: none;
+    padding: 0;
+    margin: 0;
     cursor: pointer;
     z-index: 10;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
   }
 
   .slider-btn:hover {
-    background-color: #8c6f4b;
+    background-color: rgba(156, 174, 127, 0.4);
+    padding: 0.3rem;
   }
   
   .slider-btn.prev {
-    left: 1rem;
+    top: 16rem;
+    left: 15rem;
   }
   
   .slider-btn.next {
-    right: 1rem;
+    top: 16rem;
+    right: 15rem;
   }
 
   /* Connect Section */
@@ -480,12 +466,12 @@
   .connect::before {
     content: "";
     position: absolute;
-    top: -93px;           /* adjust vertically */
-    left: 5px;          /* adjust horizontally */
-    width: 350px;         /* match your current airplane size */
-    height: 350px;
-    transform: rotate(35deg);
-    background-image: url("images/AirplaneDecor.png");
+    top: -77px;           /* adjust vertically */
+    left: -60px;          /* adjust horizontally */
+    width: 450px;         /* match your current airplane size */
+    height: 450px;
+    transform: rotate(45deg);
+    background-image: url("images/Air-Decor.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -499,7 +485,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 15rem;
+    gap: 18rem;
     flex-wrap: wrap;
   }
 
@@ -515,6 +501,8 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  /* Background image behind form box */
 
   .connect-form input, .connect-form textarea {
     width: 100%;
@@ -574,7 +562,7 @@
 
   .connect-info {
     flex: 1;
-    padding-top: 3rem;
+    padding-top: 5rem;
     position: relative;
   }
 
@@ -587,17 +575,54 @@
   }
 
   .connect-text {
-    margin-left: 250px;
-    margin-top: -30px;
+    margin-left: 260px;
+    margin-top: 10px;
   }
 
   .connect-info h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #432818;
   }
 
   .connect-info p {
     font-size: 1.1rem;
     color: #9cae7f;
-    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: -1rem;
+  }
+
+  .download-buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .download-btn {
+    color: #432818;
+    padding: 0.5rem 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    font-family: inherit;
+    text-decoration: none;
+  }
+  
+  .download-btn:hover {
+    transform: scale(1.02);
+    color: #a98467;
+  }
+
+  .download-btn::before {
+    content: "➔\00a0"; 
+    color: #fac8d0;
+    font-size: 1.8rem;
+    position: relative;
+    top: 4.5px;
+  }
+
+  .download-btn span {
+    text-decoration: underline;
   }
