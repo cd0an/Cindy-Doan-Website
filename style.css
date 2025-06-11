@@ -93,14 +93,15 @@
   /* Nav-bar on small screens */
   @media (max-width: 768px) {
     .navbar {
-      position: relative;
+      position: fixed;
       justify-content: center;
       padding: 1.5rem 2rem; /* increase vertical and horizontal padding */
       height: 70px; /* increase navbar height */
+      z-index: 9999;
     }
   
     .nav-brand {
-      position: absolute;
+      position: fixed;
       left: 50%;
       transform: translateX(-50%);
       font-size: 2rem;    
@@ -108,7 +109,7 @@
     }
   
     .nav-toggle {
-      position: absolute;
+      position: fixed;
       left: 1.5rem;          
       top: 50%;
       transform: translateY(-50%);
@@ -128,7 +129,7 @@
       gap: 2.5rem;           /* slightly bigger gap */
       padding: 1.5rem 0;     /* more padding */
       
-      background-color: rgba(255, 255, 255, 0.2);
+      background-color: rgba(255, 255, 255, 0.6);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       
@@ -139,6 +140,7 @@
   
     .nav-links a {
       font-size: 1.4rem;     /* bigger font size for links */
+      color: #432818
     }
   
     .nav-links.open {
@@ -254,7 +256,7 @@
   /* About section on mobile */
   @media (max-width: 768px) {
     .home {
-      padding-top: 2rem;
+      padding-top: 3rem;
       min-height: 65vh;
     }
   
@@ -400,7 +402,7 @@
     .social-icons-wrapper {
       display: flex;
       position: absolute;  
-      top: 26%;        
+      top: 19%;        
       right: -0.1rem;     
       max-width: 120px;
       padding: 0.2rem 0.5rem;
@@ -702,6 +704,7 @@
       max-width: 350px;
       height: auto;
       border-radius: 5px;
+      margin-top: -3.5rem;
     }
   
     .project-1-content,
@@ -727,7 +730,7 @@
     .project-1-body,
     .project-2-body,
     .project-3-body {
-      margin-top: 1rem;
+      margin-top: -3.5rem;
     }
   
     /* Adjust slider buttons */
