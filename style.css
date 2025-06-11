@@ -402,8 +402,8 @@
     .social-icons-wrapper {
       display: flex;
       position: absolute;  
-      top: 19%;        
-      right: -0.1rem;     
+      top: 22%;        
+      right: 2rem;     
       max-width: 120px;
       padding: 0.2rem 0.5rem;
       height: auto;
@@ -747,10 +747,12 @@
   
     .slider-btn.prev {
       left: -0.1rem;
+      top: 12rem;
     }
   
     .slider-btn.next {
       right: -0.1rem;
+      top: 12rem;
     }
   }
 
