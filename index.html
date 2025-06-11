@@ -16,6 +16,11 @@
         <!-- Navigation Bar -->
          <nav class = "navbar">
             <a href = "#home" class = "nav-brand">Cindy Doan</a>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
             <ul class = "nav-links">
                 <li><a href = "#home">About</a></li>
                 <li><a href = "#work">Work</a></li>
@@ -217,23 +222,14 @@
 
         <!-- Connect Section -->
          <section id = "connect" class = "connect">
+            <!-- Top Centered Text -->
+             <div class = "connect-top-text">
+                <h2>Let's Connect!</h2>
+                <p>I'm always excited to collaborate or chat. Please leave a message and I'll get back to you as soon as I can.</p>
+            </div>
+
             <div class = "connect-container">
-                <!-- Left Side: Description + Downloads -->
-                <div class = "connect-info">
-                    <div class = "connect-info-content">
-                        <div class = "connect-text">
-                            <h2>Let's Connect!</h2>
-                            <p>I'm always excited to collaborate or chat. Please leave a message and I'll get back to you as soon as I can.</p>
-
-                            <!-- Download Buttons -->
-                             <div class = "download-buttons">
-                                <a href = "Files/Doan, Cindy Resume.pdf" download class = "download-btn"><span>Download Resume</span></a>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Side: Contact Form -->
+                 <!-- Left Side: Contact Form -->
                  <div class = "connect-form">
                     <div class = "form-box">
                         <form action = "#" method = "POST">
@@ -244,8 +240,26 @@
                         </form>
                     </div>
                  </div>
+
+                <!-- Right Side: Description + Downloads -->
+                 <div class = "resume-preview">
+                    <a href = "Files/Doan, Cindy Resume.pdf" target = "blank" class = "resume-thumbnail">
+                        <img src = "images/Resume Preview.png" alt = "Resume preview" />
+                        <div class = "overlay-text">View Resume</div>
+                    </a>
+                </div>
             </div>
         </section>
+
+        <!-- Function to toggle menu on mobile -->
+         <script>
+            const navToggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+            });
+         </script>
           
         <!-- Function to open and close sidebar -->
         <script>
