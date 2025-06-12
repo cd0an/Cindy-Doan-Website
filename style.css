@@ -91,7 +91,7 @@
   }
   
   /* Nav-bar on small screens */
-  @media (max-width: 768px) {
+  @media (max-width: 1050px) {
     .navbar {
       position: fixed;
       justify-content: center;
@@ -131,7 +131,7 @@
       
       background-color: rgba(255, 255, 255, 0.6);
       backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(15px);
       
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -254,7 +254,7 @@
   }
 
   /* About section on mobile */
-  @media (max-width: 768px) {
+  @media (max-width: 1050px) {
     .home {
       padding-top: 3rem;
       min-height: 65vh;
@@ -394,7 +394,7 @@
   }
 
   /* Social icons side-bar on mobile */
-  @media (max-width: 768px) {
+  @media (max-width: 1050px) {
     #toggle-icons {
       display: none;
     }
@@ -446,8 +446,17 @@
     background-color: #a98467;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border: 1px solid rgba(67, 40, 24, 0.2); 
+    box-shadow: 0 10px 30px rgba(67, 40, 24, 0.25);
+    transition: transform 0.2s ease;
     z-index: 1;
+  }
+
+  .skills-box:hover, .courses-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(67, 40, 24, 0.4), 0 0 15px rgba(250, 224, 228, 0.3); /* deeper + glow */
+    background-color: #b08b6d; 
+    z-index: 2;
   }
   
   .skills-box h2, .courses-box h2 {
@@ -661,7 +670,7 @@
   }
 
   /* Project slideshow on mobile */
-  @media (max-width: 768px) {
+  @media (max-width: 1050px) {
     .projects-wrapper {
       width: 100%;
       min-height: auto;
@@ -936,7 +945,7 @@
   }
 
   /* Connect section on mobile */
-  @media (max-width: 768px) {
+  @media (max-width: 1050px) {
     .connect {
       padding: 2rem 1rem;
       min-height: auto;

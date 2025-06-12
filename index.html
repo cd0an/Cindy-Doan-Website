@@ -232,18 +232,38 @@
                  <!-- Left Side: Contact Form -->
                  <div class = "connect-form">
                     <div class = "form-box">
-                        <form action = "#" method = "POST">
-                            <input type = "text" name = "name" placeholder = "Your Name" required />
-                            <input type = "email" name = "email" placeholder = "Your Email" required />
-                            <textarea type = "message" name = "message" placeholder = "Your Message" required></textarea>
+                        <form name = "submit-to-google-sheet">
+                            <input type = "text" name = "Name" placeholder = "Your Name" required />
+                            <input type = "email" name = "Email" placeholder = "Your Email" required />
+                            <textarea type = "message" name = "Message" placeholder = "Your Message" required></textarea>
                             <button type = "submit" class = "send-btn">SEND</button>
                         </form>
                     </div>
                  </div>
 
+                 <script>
+                    const scriptURL = 'https://script.google.com/macros/s/AKfycbxBrS1zsGMCPNIfxJ6b_IEl-Q2Xft6kcbBYCpYIuw9lXq4wru1TNa273AGeA7YprYgU/exec'
+                    const form = document.forms['submit-to-google-sheet']
+                
+                    form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                        .then(response => response.json())
+                        .then(data => {
+                        if (data.result === 'success') {
+                            alert('Message sent successfully!')
+                            form.reset()
+                        } else {
+                            alert('Error sending message: ' + data.error)
+                        }
+                        })
+                        .catch(error => alert('Failed to send message: ' + error.message))
+                    })
+                </script>
+
                 <!-- Right Side: Description + Downloads -->
                  <div class = "resume-preview">
-                    <a href = "Files/Doan, Cindy Resume.pdf" target = "blank" class = "resume-thumbnail">
+                    <a href = "Files/Doan, Cindy Resume.pdf" target = "blank" title = "♡ Click me to view more ♡" class = "resume-thumbnail">
                         <img src = "images/Resume Preview.png" alt = "Resume preview" />
                         <div class = "overlay-text">View Resume</div>
                     </a>
