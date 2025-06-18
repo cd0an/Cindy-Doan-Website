@@ -95,8 +95,8 @@
     .navbar {
       position: fixed;
       justify-content: center;
-      padding: 1.5rem 2rem; /* increase vertical and horizontal padding */
-      height: 70px; /* increase navbar height */
+      padding: 1.5rem 2rem; 
+      height: 70px; 
       z-index: 9999;
     }
   
@@ -115,7 +115,7 @@
       transform: translateY(-50%);
       order: 0;
       display: block;
-      font-size: 1.5rem; /* bigger hamburger icon */
+      font-size: 1.5rem;
     }
   
     .nav-links {
@@ -126,8 +126,8 @@
       right: 0;
       left: 0;
       justify-content: center;
-      gap: 2.5rem;           /* slightly bigger gap */
-      padding: 1.5rem 0;     /* more padding */
+      gap: 2.5rem;          
+      padding: 1.5rem 0;     
       
       background-color: rgba(255, 255, 255, 0.6);
       backdrop-filter: blur(10px);
@@ -139,7 +139,7 @@
     }
   
     .nav-links a {
-      font-size: 1.4rem;     /* bigger font size for links */
+      font-size: 1.4rem;    
       color: #432818
     }
   
@@ -543,7 +543,7 @@
     font-style: italic;
   }
 
-  /* Project */
+  /* Project Slideshow */
   .projects-wrapper {
     position: relative;
     overflow: hidden;
@@ -649,6 +649,7 @@
     cursor: pointer;
   }
 
+  /* Project Slider Button */
   .slider-btn {
     position: absolute;
     transform: translateY(-39%);
