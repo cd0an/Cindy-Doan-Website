@@ -785,7 +785,7 @@
   /* Connect Section */
   .connect {
     position: relative;
-    background-color: #f5ebe0; 
+    background-color: #ede0d4; 
     padding: 4rem 2rem;
     display: flex;
     flex-direction: column; 
@@ -1040,6 +1040,28 @@
       font-size: 0.9rem;
       padding: 0.5rem;
     }
+  }
+
+  /* Site Footer */
+  .site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(213, 189, 175, 0.8); 
+    backdrop-filter: blur(4px); 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    padding: 0.5rem 2rem; 
+    font-size: 0.9rem;
+    color: #432818;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+  }
+  
+  .site-footer p {
+    margin: 0;
+    font-family: inherit; 
   }
   
     
