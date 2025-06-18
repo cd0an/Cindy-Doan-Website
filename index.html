@@ -155,7 +155,7 @@
             <div class = "work-container">
                 <h2>My Work Samples</h2>
                 <p class = "work-intro">
-                    The following is a collection of my academic and personal projects that include business and coding work.
+                    The following is a slideshow of my academic and personal projects that include business and coding work.
                 </p>
             </div>
          </section>
@@ -318,11 +318,15 @@
                     toggleBtn.setAttribute('aria-expanded', isVisible);
                     sidebar.style.transform = "translateX(0)";
                     toggleBtn.innerHTML = "&lt"; // Left arrow '<'
+                    toggleBtn.title = "♡ Close Sidebar ♡";
                 } else {
                     sidebar.style.transform = "translateX(100%)";
                     toggleBtn.innerHTML = "&gt"; // Rigth arrow '>'
+                    toggleBtn.title = "♡ Open Sidebar ♡";
                 }
             });
+
+            toggleBtn.title = "♡ Close Sidebar ♡"; 
         </script>
 
         <!-- Function for prev and next buttons -->

@@ -401,7 +401,7 @@
   }
 
   /* Social icons side-bar on mobile */
-  @media (max-width: 1050px) {
+  @media (max-width: 1080px) {
     #toggle-icons {
       display: none;
     }
@@ -550,9 +550,9 @@
     width: 100%;
     background: linear-gradient(
       135deg,
-      #a98467 0%,    
-      #e4c7be 50%,   
-      #f5ebe0 100%
+      #a9927d 0%,    
+      #dcc9b6 50%,   
+      #f9efe5 100%
     );
     display: flex;
     align-items: center;
@@ -604,7 +604,7 @@
 
   .project-1-date, .project-2-date, .project-3-date {
     font-size: 1rem;
-    color:#432818;
+    color: #656d4a;
     text-align: center;
     margin-bottom: -5rem;
   }
@@ -814,26 +814,26 @@
     right: 10rem;
     max-width: 700px;
     z-index: 1;
-    margin-top: -1rem; 
+    margin-top: 0.5rem; 
   }
 
   .connect-top-text h2 {
     font-size: 2.4rem;
     color: #432818;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.1rem;
   }
 
   .connect-top-text p {
     font-size: 1.1rem;
-    color: #9cae7f;
-    margin-bottom: 3rem;
+    color: #a4ac86;
+    margin-bottom: 2.1rem;
   }
 
   .connect-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 5.5rem;
+    gap: 4rem;
     flex-wrap: wrap;
     width: 100%;
     max-width: 1000px;
